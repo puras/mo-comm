@@ -10,4 +10,5 @@
 ## 版本
 
 ### 0.1.1
- * 增加`created_by`和`updated_by`的默认值，默认值为`0l`
+ * 添加数据时，增加`created_by`和`updated_by`的默认值，默认值为`0l`;
+ * 修改数据时，增加`updated_by`的默认值，默认值为`0l`;

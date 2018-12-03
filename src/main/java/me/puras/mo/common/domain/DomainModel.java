@@ -28,6 +28,7 @@ public class DomainModel implements Serializable {
     }
 
     public void updateDefaultValue() {
+        this.setUpdatedBy(0l);
         this.setUpdatedAt(DateUtils.currentDate());
     }
 
