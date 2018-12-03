@@ -17,7 +17,8 @@ public class DomainModel implements Serializable {
 
 
     public void defaultValue() {
-
+        createdBy = 0l;
+        updatedBy = 0l;
     }
 
     public void createDefaultValue() {
