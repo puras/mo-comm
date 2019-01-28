@@ -17,8 +17,6 @@ public class DomainModel implements Serializable {
 
 
     public void defaultValue() {
-        createdBy = 0l;
-        updatedBy = 0l;
     }
 
     public void createDefaultValue() {
@@ -28,7 +26,6 @@ public class DomainModel implements Serializable {
     }
 
     public void updateDefaultValue() {
-        this.setUpdatedBy(0l);
         this.setUpdatedAt(DateUtils.currentDate());
     }
 
