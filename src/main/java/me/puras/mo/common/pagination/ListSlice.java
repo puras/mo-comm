@@ -1,5 +1,6 @@
 package me.puras.mo.common.pagination;
 
+import java.io.Serializable;
 import java.util.Collections;
 import java.util.List;
 
@@ -7,12 +8,17 @@ import java.util.List;
  * @author puras <he@puras.me>
  * @since 16/1/14  下午12:49
  */
-public class ListSlice<T> {
+public class ListSlice<T> implements Serializable {
 
     private static final ListSlice EMPTY_SLICE = new ListSlice(0, Collections.emptyList());
 
     private final long total;
     private final List<T> list;
+
+    public ListSlice() {
+        this.total = 0;
+        this.list = null;
+    }
 
     public ListSlice(long total, List<T> list) {
         this.total = total;
